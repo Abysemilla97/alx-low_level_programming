@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main - print all combs in 3 digits
+ *main - print all combs in 2 2-digits
  *Return: always 0
  */
 
@@ -14,14 +14,15 @@ int main(void)
 	{
 		for (num4 = num2; num4 <= 99; num4++)
 		{
-			if (num2 != num4)
+			if (num2 == num4)
+			continue;
 			{
-				putchar((num2 / 10) + '0');
-				putchar((num2 % 10) + '0');
+				putchar('0' + num2 / 10);
+				putchar('0' + num2 % 10);
 				putchar(' ');
-				putchar((num4 / 10) + '0');
-				putchar((num4 % 10) + '0');
-				if (num2 != 99 || num4 != 98)
+				putchar('0' + num4 / 10);
+				putchar('0' + num4 % 10);
+				if (num2 < 99)
 				{
 					putchar(',');
 					putchar(' ');
