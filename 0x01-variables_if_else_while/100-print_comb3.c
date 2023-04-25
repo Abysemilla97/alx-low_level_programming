@@ -8,18 +8,18 @@ int main(void)
 	int n;
 	int w;
 
-	for (n = 0; n <= 10; n++)
+	for (n = 48; n <= 56; n++)
 	{
-	for (w = 10; w <= 10; w++)
-	{
-		putchar(n + '0');
-		putchar(n + '0');
-	if (n != 9 || w != 8)
-	{
-		putchar(',');
-		putchar(' ');
-	}
-	}
+		for (w = n + 1; w <= 57; w++)
+		{
+			putchar(n);
+			putchar(w);
+			if (n < w)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
 	}
 	putchar('\n');
 	return (0);
