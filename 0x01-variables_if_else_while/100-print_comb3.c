@@ -8,13 +8,13 @@ int main(void)
 	int n;
 	int w;
 
-	for (n = 48; n <= 56; n++)
+	for (n = 0; n <= 8; n++)
 	{
-		for (w = n + 1; w <= 57; w++)
+		for (w = n + 1; w <= 9; w++)
 		{
-			putchar(n);
-			putchar(w);
-			if (n < w)
+			putchar('0' + n);
+			putchar('0' + w);
+			if (n < 8)
 			{
 				putchar(',');
 				putchar(' ');
