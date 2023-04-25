@@ -15,7 +15,6 @@ int main(void)
 		for (num4 = num2; num4 <= 99; num4++)
 		{
 			if (num2 == num4)
-			continue;
 			{
 				putchar('0' + num2 / 10);
 				putchar('0' + num2 % 10);
