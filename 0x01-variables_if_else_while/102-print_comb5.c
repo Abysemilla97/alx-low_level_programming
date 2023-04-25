@@ -4,24 +4,23 @@
  *main - print all combs in 2 2-digits
  *Return: always 0
  */
-
 int main(void)
 {
-	int num2;
-	int num4;
+	int x;
+	int z;
 
-	for (num2 = 0; num2 <= 99; num2++)
+	for (x = 0; x < 100; x++)
 	{
-		for (num4 = num2; num4 <= 99; num4++)
+		for (z = 0; z < 100; z++)
 		{
-			if (num2 == num4)
+			if (x < z)
 			{
-				putchar('0' + num2 / 10);
-				putchar('0' + num2 % 10);
+				putchar((x / 10) + 48);
+				putchar((z % 10) + 48);
 				putchar(' ');
-				putchar('0' + num4 / 10);
-				putchar('0' + num4 % 10);
-				if (num2 < 99)
+				putchar((z / 10) + 48);
+				putchar((z % 10) + 48);
+				if (x != 98 || z != 99)
 				{
 					putchar(',');
 					putchar(' ');
@@ -32,3 +31,4 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
