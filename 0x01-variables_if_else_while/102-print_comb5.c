@@ -9,23 +9,22 @@ int main(void)
 	int x;
 	int z;
 
-	for (x = 0; x < 100; x++)
+	for (x = 0; x <= 99; x++)
 	{
-		for (z = 0; z < 100; z++)
+		for (z = x; z <= 99; z++)
 		{
-			if (x < z)
-			{
-				putchar((x / 10) + 48);
-				putchar((z % 10) + 48);
+			if (x == z)
+			continue;
+				putchar((x / 10) + '0');
+				putchar((x % 10) + '0');
 				putchar(' ');
-				putchar((z / 10) + 48);
-				putchar((z % 10) + 48);
+				putchar((z / 10) + '0');
+				putchar((z % 10) + '0');
 				if (x != 98 || z != 99)
 				{
 					putchar(',');
 					putchar(' ');
 				}
-			}
 		}
 	}
 	putchar('\n');
