@@ -7,7 +7,7 @@
 int _isalpha(int c)
 
 {
-	if ((c >=97; && c <= 122) || (c >= 65 && c <==98))
+	if ((c >=97 && c <= 122) || (c >= 65 && c <=98))
 	{
 		return (1);
 	}
@@ -15,5 +15,5 @@ int _isalpha(int c)
 	{
 		return (0);
 	}
-	_purchat('\n');
+	_putchar('\n');
 }
