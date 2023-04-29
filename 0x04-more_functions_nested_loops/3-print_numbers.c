@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_numbers - print nunbers since 0 up to 9
- * Return: the numbers 0 up to 9
+ * print_numbers - Print the nunbers since 0 up to 9
+ * Return: The numbers since 0 up to 9
  */
 
 void print_numbers(void)
@@ -14,5 +14,5 @@ void print_numbers(void)
 	{
 	_putchar(x + '0');
 	}
-	_putchar ('\n');
+	_putchar('\n');
 }
