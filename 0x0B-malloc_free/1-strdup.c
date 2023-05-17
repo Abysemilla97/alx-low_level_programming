@@ -13,7 +13,8 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 	{
-		return (NULL);
+		printf("memory could not be allowed")
+		return (0);
 	}
 	len = 0;
 	while (str[len] != '\0')
@@ -24,7 +25,8 @@ char *_strdup(char *str)
 
 	if (nstr == NULL)
 	{
-		return (NULL);
+		printf("memory could not be allowed")
+		return (0);
 	}
 
 	for (i = 0; i < len; i++)
