@@ -2,8 +2,8 @@
 #include "dog.h"
 
 int _strlen(char *str);
-dog_t *new_dog(char *name, float age, char *owner);
 char *_strcpy(char *dest, char *src);
+dog_t *new_dog(char *name, float age, char *owner);
 
 /**
  * _strlen - Finding the length of a string.
@@ -22,12 +22,12 @@ int _strlen(char *str)
 }
 
 /**
- * strcpy - copies a string pointed to by src, including the
+ * _strcpy - copies a string pointed to by src, including the
  *	terminating null byte, to a buffer pointed to by dest.
  * @dest: the buffer storing the string.
  * @src: the source string.
  *
- * return: the pointer to dest.
+ * Return: the pointer to dest.
  */
 char *_strcpy(char *dest, char *src)
 {
