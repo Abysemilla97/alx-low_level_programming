@@ -29,7 +29,6 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 
 	for (len = 0; str[len]; len++)
-
 	n_node->str = dup;
 	n_node->len = len;
 	n_node->next = NULL;
@@ -45,6 +44,5 @@ list_t *add_node_end(list_t **head, const char *str)
 		end = end->next;
 		end->next = n_node;
 	}
-
 	return (*head);
 }
