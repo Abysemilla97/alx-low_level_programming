@@ -6,9 +6,9 @@ section .text
 main:
 	push rbp
 
-	mov rdi,format	; Format string
-	mov rsi,message	; Message string
-	mov rax,0	; Clear eax register (no floating-point arguments)
+	mov rdi,fmt
+	mov rsi,msg
+	mov rax,0
 	call printf
 
 	pop rbp
@@ -17,5 +17,5 @@ main:
 	ret
 
 section .data
-        message: db "Hello Holberton", 0
-        format: db "%s", 10, 0
+        msg: db "Hello Holberton", 0
+        fmt: db "%s", 10, 0
