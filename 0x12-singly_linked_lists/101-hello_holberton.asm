@@ -4,8 +4,9 @@ section .text
 	global main
 
 main:
+	push rbp
 
-	mov rdi,format		; Format string
+	mov rdi,format	; Format string
 	mov rsi,message	; Message string
 	mov rax,0	; Clear eax register (no floating-point arguments)
 	call printf
