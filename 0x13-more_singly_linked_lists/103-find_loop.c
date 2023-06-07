@@ -10,9 +10,9 @@
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *tortoise;
-	listint_t *hare = head;
+	listint_t *tortoise, *hare;
 
+	tortoise = hare = head;
 	while (tortoise && hare && hare->next)
 	{
 		tortoise = tortoise->next;
@@ -32,3 +32,4 @@ listint_t *find_listint_loop(listint_t *head)
 	}
 	return (hare);
 }
+
