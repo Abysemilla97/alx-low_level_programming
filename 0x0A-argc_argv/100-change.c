@@ -24,24 +24,24 @@ int main(int argc, char *argv[])
 		coins++;
 		if ((ncent - 25) >= 0)
 		{
-			ncent-= 25;
+			ncent -= 25;
 			continue;
 		}
 		if ((ncent - 10) >= 0)
-                {
-                        ncent-= 10;
-                        continue;
-                }
+		{
+			ncent -= 10;
+			continue;
+		}
 		if ((ncent - 5) >= 0)
-                {
-                        ncent-= 5;
-                        continue;
-                }
+		{
+			ncent -= 5;
+			continue;
+		}
 		if ((ncent - 2) >= 0)
-                {
-                        ncent-= 2;
-                        continue;
-                }
+		{
+			ncent -= 2;
+			continue;
+		}
 		ncent--;
 	}
 	printf("%d\n", coins);
