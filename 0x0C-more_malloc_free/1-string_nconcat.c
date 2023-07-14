@@ -26,29 +26,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= len2)
 		n = len2;
 
-	strg = malloc(sizeof(char) * (len1 + len2 + n + 1));
+	strg = malloc(sizeof(char) * (len1 + len2 + n) + 1);
 	if (strg == NULL)
-		free(strg);
+		return (NULL);
 
 	for (i = 0; i < len1; i++)
+	{
 		strg[i] = s1[i];
+	}
 	for (j = 0; j < n; j++)
+	{
 		strg[len1 + j] = s2[j];
+	}
 
 	strg[len1 + n] = '\0';
 	return (strg);
-}
-
-/**
- * _strlen - calculates and returns string length.
- * @string: the string.
- * Return: string length.
- */
-int _strlen(char *string)
-{
-	int l;
-
-	for (l = 0; string[l] != 0; l++)
-		;
-	return (l);
 }
