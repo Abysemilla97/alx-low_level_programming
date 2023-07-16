@@ -86,7 +86,7 @@ int main(int argc, char *argv[])
 			_putchar(f_result[i] + '0');
 	}
 	if (!l)
-		_putchar(0);
+		_putchar('0');
 	_putchar('\n');
 	free(f_result);
 	return (0);
