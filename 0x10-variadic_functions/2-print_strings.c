@@ -2,7 +2,7 @@
 #include <stdarg.h>
 
 /**
- * print_strings - Write a function that prints strings, \n. 
+ * print_strings - a function that prints strings, \n.
  * @separator: the string to be printed between the strings.
  * @n: the number of strings passed.
  * Return: nothing 0.
