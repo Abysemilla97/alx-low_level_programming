@@ -3,7 +3,7 @@
 /**
  * clear_bit - a function setting the value of a
  * bit to 0 at a given index.
- * @n: the value.
+ * @n: the value of a bit.
  * @index: the index, starting from 0 of the bit to set.
  *
  * Return: 1 for success, or -1 for error.
@@ -22,3 +22,4 @@ int clear_bit(unsigned long int *n, unsigned int index)
 
 	return (-1);
 }
+
