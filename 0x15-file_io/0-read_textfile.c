@@ -6,7 +6,7 @@
  * @filename: the name of the file.
  * @letters: numb of letters to be read and printed.
  *
- * Return: the actual number of letters it can read and print.
+ * Return: the actual number of letters it read and prints.
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -22,7 +22,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd == -1)
 		return (0);
 
-	buffer = malloc(sizeof(char) * letters);
+	buffer = malloc(sizeof(char) * (letters + 1));
 	{
 		if (buffer == NULL)
 			return (0);
